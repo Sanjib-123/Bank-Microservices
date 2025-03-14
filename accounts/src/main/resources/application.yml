@@ -23,7 +23,13 @@ spring:
     import: "optional:configserver:http://localhost:8071/" # Ensure correct placement under 'spring'
   cloud:
     config:
-      enabled: true # Set to false if you don't need Spring Cloud Config
+      enabled: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+
 
 springdoc:
   api-docs:
@@ -35,3 +41,7 @@ management:
   metrics:
     enable:
       process: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"

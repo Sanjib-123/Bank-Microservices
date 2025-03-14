@@ -21,9 +21,24 @@ spring:
     show-sql: true
   config:
     import: "optional:configserver:http://localhost:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
 springdoc:
   api-docs:
     enabled: true
   swagger-ui:
     enabled: true
+
+management:
+  metrics:
+    enable:
+      process: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
