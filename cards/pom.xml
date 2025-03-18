@@ -117,7 +117,7 @@
 				<version>3.4.2</version>
 				<configuration>
 					<to>
-						<image>sanjib7/${project.artifactId}:s4</image>
+						<image>sanjib7/${project.artifactId}:s6</image>
 					</to>
 				</configuration>
 			</plugin>
